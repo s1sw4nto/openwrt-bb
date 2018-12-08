@@ -17,6 +17,10 @@ Use "make menuconfig" to configure your image.
 ./scripts/feeds install -a
 make menuconfig
 make tools/install
+cd /dl
+wget --no-check-certificate https://www.linux-mips.org/pub/linux/mips/kernel/v3.x/linux-3.10.49.tar.xz
+wget https://releases.linaro.org/archive/14.04/components/toolchain/gcc-linaro/4.8/gcc-linaro-4.8-2014.04.tar.xz
+cd ./
 make toolchain/install
 make kernel_menuconfig
 make

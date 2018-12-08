@@ -13,6 +13,14 @@ package/feeds/.
 
 Use "make menuconfig" to configure your image.
 
+./scripts/feeds update -a
+./scripts/feeds install -a
+make menuconfig
+make tools/install
+make toolchain/install
+make kernel_menuconfig
+make
+
 Simply running "make" will build your firmware.
 It will download all sources, build the cross-compile toolchain, 
 the kernel and all choosen applications.

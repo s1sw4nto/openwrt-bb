@@ -19,6 +19,7 @@ mkdir dl
 cd /dl
 wget https://github.com/jslink/openwrt-trunk-dl/raw/master/linux-3.10.49.tar.xz
 wget https://github.com/jslink/openwrt-trunk-dl/raw/master/gcc-linaro-4.8-2014.04.tar.xz
+wget https://github.com/jslink/openwrt-trunk-dl/raw/master/util-linux-2.24.1.tar.xz
 cd ../
 #make toolchain/install
 #make tools/install
